@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useEffect } from 'react'
+import Carousel from '../components/Carousel'
 
 export default function Home() {
   useEffect(() => {
@@ -9,6 +10,11 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
+      <Head>
+        <title>My page title</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <Carousel />
         <main className={styles.main}>
           <h1 className={styles.title}>
             Welcome to <a href="https://nextjs.org">Next.js!</a>

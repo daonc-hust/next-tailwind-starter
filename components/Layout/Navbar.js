@@ -17,7 +17,7 @@ function classNames(...classes) {
 
 export default function Nav() {
   return (
-    <Disclosure as="nav" className="bg-white">
+    <Disclosure as="nav" className="bg-white sticky top-0 shadow-lg shadow-slate-200/40 bg-white z-50">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -75,7 +75,7 @@ export default function Nav() {
                 className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   type="button"
-                  className="p-1 rounded-full text-indigo-500 hover:text-indigo-400 focus:outline-none focus:ring-white"
+                  className="p-1 rounded-full text-gray-600 hover:text-indigo-500 focus:outline-none focus:ring-indigo-200 focus:ring-2"
                 >
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true"/>
